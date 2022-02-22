@@ -1,0 +1,339 @@
+/*-----------------------ROOT-GENERAL------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration-line: none;
+}
+.html, body{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 25px;
+    margin: 15px;
+}
+/*----------------------HEADER-NAV-ALL-----------------------------*/
+.header__all{
+    grid-area: header;
+}
+.header__all{
+    padding: 15px;
+    margin: 15px;
+    background-color: #000;
+    border: 10px;
+    border-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #a1a1a1;
+}
+.header__all--logo{
+    background-color: #a1a1a1;
+    border: 7px solid #fff; 
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+}
+.header__all--latin {
+    font-size: 20px;
+    color: #fff;
+    /*display: block;*/
+    display: flex;
+    justify-content: right;
+}
+.header__all nav ul {
+    font-size: 20px;
+    color: #fff;
+    list-style: none;
+}
+.header__all nav li{
+    display: inline-flex;
+    margin: 7px;
+    margin-block-end: 5px;
+    background-color: #a1a1a1;
+    padding: 10px;
+    border: 3px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #e9e6e6;
+}
+/*-----------------------main--------------------*/
+.main{
+    grid-area: main;
+}
+.slogan__y{
+    background-color: #a1a1a1;
+    border-radius: 15px;
+    margin: 15px;
+}
+.slogan__y p{
+    font-size: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+.imagenes__muestra{
+    background-color: #000;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.imagenes__muestra div {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+/*-------------------FOOTER-ALL--------------------*/
+.footer{
+    grid-area: footer;
+}
+.footer__redes--1{
+    font-size: 20px;
+    background-color: #a1a1a1;
+    border-radius: 15px;
+    padding: 5px;
+    width: 150px;
+    margin: 10px 15px 0px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__redes a {
+    display: inline-flex;
+    justify-content: space-between 20px;
+    height: 90px;
+    width: 90px;
+    margin: 0px 15px 0px 15px;
+}
+.footer__legal--legal{
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    margin: 0px 15px 0px 15px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+}
+/*----------------PRODUCTOS-----------------*/
+.alone{
+    font-size: 25px;
+    color: #fff;
+    background-color: #000;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.productos__jitzi{
+    font-size: 15px;
+}
+.productos__jitzi--1 {
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin: 10px 15px 10px 15px;
+}
+.productos__jitzi--playera{
+    color: #000;
+    margin: 10px 0px;
+    padding: 3px;
+    border-radius: 10px;
+}
+.productos__jitzi--f1{
+    display: inline-block;
+    padding-inline-end: 25px;
+}
+.form__d{
+    padding: 10px;
+    background-color: #a1a1a1;
+    border-radius: 10px;
+    display: block;
+}
+/*----------------INDUSTRIA-----------------*/
+.discurso__industrias{
+    font-size: 20px;
+    color: #000;
+    margin: 0px 15px 0px 15px;
+    border: solid 10px #a1a1a1;
+    display: inline-flex;
+    justify-content: center;
+}
+.discurso__industrias--1--logo{
+    background-color: #a1a1a1;
+    border: 7px solid #fff; 
+    border-radius: 10px;
+    padding: 25px;
+}
+.formulario__indus{
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    margin: 0px 15px 0px 15px;
+    border: solid 10px #a1a1a1;
+    display: inline-flex;
+}
+.formulario__indus h3, h4 {
+    display: inline-flex;
+}
+/*----------------QUIENES-----------------*/
+.texto__1qs{
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    margin: 0px 15px 0px 15px;
+    border: solid 10px #a1a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+/*----------------CONTACTO-----------------*/
+.info__cliente{
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    margin: 0px 15px 0px 15px;
+    border: solid 10px #a1a1a1;
+}
+.info__cliente p {
+    display: inline-flex;
+    justify-content: center;
+}
+/*------------grid--------------------*/
+.grid__container {
+    display: grid; 
+    grid-template-columns: 1fr 0fr; 
+    grid-template-rows: 350px 2fr 200px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+/*----------------media querris-------------------*/
+@media screen and (max-width:750px) {
+    /*------------------header----------------*/
+    .header__all{
+        padding: 5px;
+        margin: 5px;
+    }
+    .header__all--logo{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .header__all--latin {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header__all nav ul {
+        font-size: 18px;
+        color: #fff;
+        list-style: none;
+    }
+    .header__all nav li{
+        display: inline-flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;}
+        
+    /*-------------main--------------------*/
+    .slogan__y{
+        margin: 10px;
+    }
+    .slogan__y p{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .imagenes__muestra{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenes__muestra div {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    /*------------------footer--------------*/
+    .footer__redes--1{
+        font-size: 18px;
+        flex-direction: column;
+    }
+    .footer__legal--legal{
+        font-size: 12px;
+    }
+    /*-----------------PRODUCTOS-----------------*/
+    .alone{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .productos__jitzi{
+        font-size: 18px;
+    }
+    .productos__jitzi--1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px 0px 5px;
+        margin: 5px 10px 5px 10px;
+    }
+    .form__d{
+        padding: 7px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    /*----------------INDUSTRIA-----------------*/
+    .discurso__industrias{
+        font-size: 18px;
+        margin: 0px 10px 0px 10px;
+        border: solid 12px #a1a1a1;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .discurso__industrias--1--logo{
+        background-color: #a1a1a1;
+        border: 7px solid #fff; 
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .formulario__indus{
+        margin: 0px 10px 0px 10px;
+        border: solid 12px #a1a1a1;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .formulario__indus h3, h4 {
+        flex-direction: column;
+    }
+    /*----------------QUIENES-----------------*/
+    .texto__1qs{
+        font-size: 22px;
+        margin: 0px 10px 0px 10px;
+        border: solid 10px #a1a1a1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    /*----------------CONTACTO-----------------*/
+    .info__cliente{
+        font-size: 22px;
+        margin: 0px 10px 0px 10px;
+    }
+    .info__cliente p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+/*------------grid--------------------*/
+    .grid__container {
+        display: grid; 
+        grid-template-columns: 1fr 0fr; 
+        grid-template-rows: 255px 2fr 150px; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
