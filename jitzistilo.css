@@ -12,30 +12,30 @@
 }
 /*----------------------HEADER-NAV-ALL-----------------------------*/
 .header__all{
-    grid-area: header;
-}
-.header__all{
     padding: 15px;
     margin: 15px;
-    background-color: #000;
+    background-color: #a1a1a1;
     border: 10px;
     border-color: #fff;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px 2px #a1a1a1;
-}
-.header__all--logo{
-    background-color: #a1a1a1;
-    border: 7px solid #fff; 
-    border-radius: 10px;
-    padding: 25px;
+    box-shadow: 2px 2px 2px 2px;
+    grid-area: header;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__all > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__all > div h1{
+    text-align: center;
 }
 .header__all--latin {
     font-size: 20px;
     color: #fff;
-    /*display: block;*/
-    display: flex;
-    justify-content: right;
 }
 .header__all nav ul {
     font-size: 20px;
